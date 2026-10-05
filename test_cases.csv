@@ -1,4 +1,5 @@
-Test Case,Light Condition,Motion,Expected Output,Observed Output,Status
-TC01,High light/day,No motion,LED OFF,LED OFF,PASS
-TC02,Low light/night,No motion,LED low brightness,LED low brightness,PASS
-TC03,Low light/night,Motion detected,LED high brightness,LED high brightness,PASS
+| Test Case | Light     | Motion           | Battery | Expected Output               | Status |
+| TC01      | High/day  | No motion        | Normal  | LED OFF                       | PASS   |
+| TC02      | Low/night | No motion        | Normal  | LED LOW brightness            | PASS   |
+| TC03      | Low/night | Motion           | Normal  | LED HIGH brightness           | PASS   |
+| TC04      | Low/night | Motion/No motion | <20%    | LED OFF + Low Battery Warning | PASS   |
